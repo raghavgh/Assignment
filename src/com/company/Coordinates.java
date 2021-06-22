@@ -1,6 +1,10 @@
 package com.company;
 
 public class Coordinates {
+
+    private Integer x;
+    private Integer y;
+
     public Coordinates(Integer x, Integer y) {
         this.x = x;
         this.y = y;
@@ -14,11 +18,6 @@ public class Coordinates {
         return y;
     }
 
-    @Override
-    public String toString() {
-        return x + " " + y;
-    }
-
     public void setX(Integer x) {
         this.x = x;
     }
@@ -27,7 +26,9 @@ public class Coordinates {
         this.y = y;
     }
 
-    private Integer x;
-    private Integer y;
+    @Override
+    public String toString() {
+        return x + " " + y;
+    }
 
 }
