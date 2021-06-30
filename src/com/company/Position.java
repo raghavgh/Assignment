@@ -1,13 +1,15 @@
 package com.company;
 
-public class Coordinates {
+public class Position {
 
     private Integer x;
     private Integer y;
+    private FacingDirection facingDirection;
 
-    public Coordinates(Integer x, Integer y) {
+    public Position(Integer x, Integer y, FacingDirection facingDirection) {
         this.x = x;
         this.y = y;
+        this.facingDirection = facingDirection;
     }
 
     public Integer getX() {

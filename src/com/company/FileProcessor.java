@@ -38,13 +38,13 @@ public class FileProcessor {
         String str;
         switch (commandParams[0]){
             case "START":
-                Main.current = new Coordinates(Integer.parseInt(commandParams[1]),
+                Main.current = new Position(Integer.parseInt(commandParams[1]),
                         Integer.parseInt(commandParams[2]));
                 break;
             case "HOLE":
-                Coordinates coordinates = new Coordinates(Integer.parseInt(commandParams[1]),
+                Position position = new Position(Integer.parseInt(commandParams[1]),
                         Integer.parseInt(commandParams[2]));
-                Main.holes.add(coordinates);
+                Main.holes.add(position);
                 break;
             case "AHEAD":
                 Step step = new Step(Direction.AHEAD,
